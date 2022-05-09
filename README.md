@@ -4,6 +4,12 @@
 
 - 
 
+## Cosas
+
+- Importante hemos instalado Vuetify, para que funcionara tuve que instalar el plugin https://vuetifyjs.com/en/getting-started/installation/
+- hemos usado https://www.npmjs.com/package/vue-p5
+- y el ejemplo https://github.com/Kinrany/vue-p5-example/
+
 ## Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
@@ -14,6 +20,7 @@ usando este link https://www.neoguias.com/como-publicar-aplicacion-vue-github-pa
 el procedimiento es:
 - Haces cambios en main
 - git add and commit
+- te pasas a gh-pages, git checkout gh-pages
 - merge con gh-pages, lo haces desde desktop
 - haces yarn build
 - git add dist
