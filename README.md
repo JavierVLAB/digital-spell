@@ -1,5 +1,27 @@
 # digital-spell
 
+## TODO
+
+- 
+
+## Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## How to deploy on github
+
+usando este link https://www.neoguias.com/como-publicar-aplicacion-vue-github-pages/
+
+git checkout -b gh-pages
+
+
+yarn build
+
+git add dist
+
+git commit -m "gh-pages commit"
+
+git subtree push --prefix dist origin gh-pages
+
 ## Project setup
 ```
 yarn install
@@ -20,18 +42,3 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-usando este link https://www.neoguias.com/como-publicar-aplicacion-vue-github-pages/
-
-git checkout -b gh-pages
-
-
-yarn build
-
-git add dist
-
-git commit -m "gh-pages commit"
-
-git subtree push --prefix dist origin gh-pages
