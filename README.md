@@ -11,8 +11,16 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 usando este link https://www.neoguias.com/como-publicar-aplicacion-vue-github-pages/
 
-git checkout -b gh-pages
+el procedimiento es:
+- Haces cambios en main
+- git add and commit
+- merge con gh-pages, lo haces desde desktop
+- haces yarn build
+- git add dist
+- git commit 
+- git subtree push --prefix dist origin gh-pages
 
+git checkout -b gh-pages
 
 yarn build
 
