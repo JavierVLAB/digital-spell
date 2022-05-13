@@ -15,18 +15,8 @@
             cols="12"
             sm="4"
           >
-            <v-sheet
-              rounded="lg"
-              min-height="268"
-            >
-              <v-img
-                contain
-                max-height="80%"
-                max-width="100%"
-                src="https://picsum.photos/id/11/500/300"
-              ></v-img>
+          <enter-pad @image="image = $event"></enter-pad>
 
-            </v-sheet>
           </v-col>
 
           <v-col
@@ -37,7 +27,7 @@
               rounded="lg"
               min-height="268"
             >
-              <sketch-test />
+              <sketch-pad :image="image"></sketch-pad>
             </v-sheet>
           </v-col>
         </v-row>
@@ -47,17 +37,19 @@
 </template>
 
 <script>
-import SketchTest from './components/SketchTest.vue';
+import SketchPad from './components/SketchPad.vue'
+import EnterPad from './components/EnterPad.vue'
 
 export default {
   name: 'App',
 
   components: {
-    SketchTest
+    SketchPad,
+    EnterPad
   },
 
   data: () => ({
-
+    image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
   })
 };
 </script>
