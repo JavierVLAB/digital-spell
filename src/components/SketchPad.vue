@@ -4,7 +4,6 @@
       height="250"
       :src="myImage"
     ></v-img>
-    {{ image }}
     <v-btn
       color="deep-purple lighten-2"
       text
@@ -51,7 +50,7 @@ export default {
       spell += 'Este imagen es activada magicamente para emanar buena energía '
       spell += 'reforzamos la buena energía, las buenas intenciones, los buenos deseos, el amor '
       spell += 'OM MANI PADME HUNG '
-      spell += 'Que esta imagen venefice a todos los seres '
+      spell += 'Que esta imagen Beneficie a todos los seres '
       console.log(spell)
       return this.image
     }
