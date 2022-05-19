@@ -2,7 +2,11 @@
 
 ## TODO
 
-- 
+- Enviar la imagen del enter pad al sketch pad, la nueva
+- aplicar limpieza y proteccion
+- aplicar magia personal
+- poner un simbolo de información y una alerta para explicar lo que se hace
+- mejorar la maquetacion, sobretodo del sketch pad
 
 ## Cosas
 
