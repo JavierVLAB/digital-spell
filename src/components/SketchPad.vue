@@ -1,16 +1,18 @@
 <template>
   <div>
     <v-img
-      height="250"
+      contain
+      max-width="100%"
       :src="myImage"
     ></v-img>
     <v-btn
       color="deep-purple lighten-2"
       text
-      @click="changeSource"
+      @click="newTabImage"
     >
       Reserve
     </v-btn>
+    <a :href="myImage" download class="btn btn-success">Descargar imagen</a>
     <!--
     <vue-p5
       @preload="preload"
@@ -108,6 +110,14 @@ export default {
     },
     changeSource(){
 
+    },
+    newTabImage() {
+      var link = document.createElement("a");
+      link.download = this.myImage;
+      //link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");//image.src; //canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); //image.src; // "canvasCtx"
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
   }
 };
