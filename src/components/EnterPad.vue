@@ -13,7 +13,8 @@
     </template>
 
     <v-img
-      height="250"
+      contain
+      max-width="300"
       :src="source"
     ></v-img>
 
@@ -50,7 +51,7 @@
       <v-btn
         color="deep-purple lighten-2"
         text
-        @click="$emit('image','https://cdn.pixabay.com/photo/2020/07/12/07/47/bee-5396362_1280.jpg')"
+        @click="$emit('image',source)"
       >
         Transformar
       </v-btn>
