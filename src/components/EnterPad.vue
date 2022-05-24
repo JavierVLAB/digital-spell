@@ -26,14 +26,13 @@
           accept="image/png, image/jpeg, image/bmp"
           prepend-icon="mdi-camera"
           label="Imagen"
-          @change="test"
+          @change="updateImageWithFile"
         ></v-file-input>
         <v-checkbox
-          v-model="ex4"
+          v-model="isCleaning"
           class="mt-0"
           label="Limpiar y Proteger"
-          color="deep-purple"
-          value="red"
+          color="primary"
           hide-details
         ></v-checkbox>
         <v-textarea
@@ -49,7 +48,7 @@
 
     <v-card-actions>
       <v-btn
-        color="deep-purple lighten-2"
+        color="primary"
         text
         @click="$emit('image',source)"
       >
@@ -64,24 +63,13 @@
       loading: false,
       selection: 1,
       source: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
-      ex4: true
+      isCleaning: true
     }),
     computed: {
 
     },
     methods: {
-      reserve () {
-        this.loading = true
-
-        setTimeout(() => (this.loading = false), 2000)
-      },
-      changeSource () {
-        this.source = 'https://cdn.pixabay.com/photo/2020/07/12/07/47/bee-5396362_1280.jpg'
-      },
-      sendImage () {
-        this.$emit("image",this.source)
-      },
-      test (e) {
+      updateImageWithFile (e) {
         this.source= URL.createObjectURL(e)
         console.log(this.source)
       }
