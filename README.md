@@ -28,8 +28,9 @@ el procedimiento es:
 - merge con gh-pages, lo haces desde desktop
 - haces yarn build
 - git add dist
-- git commit 
+- git commit -m "mensaje de update de hoy"
 - git subtree push --prefix dist origin gh-pages
+- vuelve a main
 
 git checkout -b gh-pages
 
